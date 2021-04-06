@@ -1,0 +1,272 @@
+@import 'variables';
+
+// Estilos generales
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+// Barra de Navegación
+
+nav {
+    background-image: $bg-gradient;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link {
+    font-weight: normal;
+    font-family: 'Roboto Slab', serif;
+}
+
+// Main 
+
+.main-container-fluid {
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// Footer
+
+.footer-container-fluid {
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, rgba(240, 220, 252, 0.829), rgba(138, 92, 165, 0.9));
+    ;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    ul a {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: $tx-color-subtitulo;
+        text-shadow: $tx-shadow-subtitulo;
+    }
+
+    h6 {
+        font-family: 'Roboto Slab', serif;
+        color: $tx-color-titulo;
+        text-shadow: $tx-shadow-titulo;
+    }
+
+    b {
+        font-family: 'Roboto Slab', serif;
+        color: $tx-color-titulo;
+        text-shadow: $tx-shadow-titulo;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        text-shadow: $tx-shadow-titulo;
+    }
+
+    small {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360)));
+}
+
+.bold-text {
+    color: white;
+}
+
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360)));
+}
+
+.social a {
+    font-size: 21px;
+    color: $tx-color-titulo;
+}
+
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360)));
+}
+
+// Carrusel
+
+.carousel-caption {
+    h1, h2 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+        font-size: 2em;
+        color: $tx-color-titulo;
+        text-shadow: $tx-shadow-titulo;
+    }
+    
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        font-size: 1em;
+        color: $tx-color-subtitulo;
+        text-shadow: $tx-shadow-subtitulo;
+    }
+}
+
+// Tarjetas de Secciones
+
+.card-deck {
+    background-color: $bg-color;
+
+    img {
+        box-shadow: $box-shadow;
+        transition: all 1s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .card-body {
+        background-color: $bg-color-light;
+        box-shadow: $box-shadow;
+
+        a {
+            color: $tx-color-titulo;
+            font-size: 1.7em;
+            font-family: 'Roboto Slab', serif;
+            text-shadow: $tx-shadow-titulo;
+
+            &:hover {
+                text-decoration: none;
+                color: violet;
+                opacity: 0.8;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 0.8em;
+            }
+        }
+
+        p {
+            color: $tx-color-subtitulo;
+            font-size: 0.85em;
+            font-family: 'Poppins', sans-serif;
+            text-shadow: $tx-shadow-subtitulo;
+        }
+    }
+}
+
+.cardDeck-container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+// Seccion de Servicio de arreglos y modificaciones
+
+.card-container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.text-container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.5em;
+    color: $tx-color-titulo;
+    text-shadow: $tx-shadow-titulo;
+
+    @media (max-width: 768px) {
+        opacity: 0.8;
+        line-height: 1em;
+        font-size: 1em;
+        color: black;
+    }
+
+    @media (max-width: 576px) {
+        opacity: 1;
+        line-height: 1em;
+        font-size: 0.8em;
+        color: black;
+    }
+
+}
+
+.card-title {
+    color: $tx-color-titulo;
+    font-size: 1.7em;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: $tx-shadow-titulo;
+
+    @media (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+// Portadas de Páginas
+
+.tituloPortada {
+    position: absolute;
+    top: 45%;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: $tx-color-titulo;
+    text-shadow: $tx-shadow-titulo;
+}
+
+.subtituloPortada {
+    position: absolute;
+    top: 55%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    color: $tx-color-subtitulo;
+    text-shadow: $tx-shadow-subtitulo;
+}
+
+// Pagina Mujer
+
+#portadaMujer {
+    background-color: $bg-color-light;
+}
+
+// Pagina Hombre
+
+#portadaHombre {
+    background-color: $bg-color-men;
+}
+
+// Pagina Peques
+
+#portadaPeques {
+    background-image: linear-gradient(to bottom, rgb(252, 210, 248), rgba(205, 231, 253, 0.966));
+}
+
+// Contacto
+
+.videoResponsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoResponsive iframe,
+.videoResponsive object,
+.videoResponsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#formulario {
+    background-image: $bg-gradient-top;
+    padding-top: 25px;
+}
