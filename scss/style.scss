@@ -117,7 +117,7 @@ small {
     background-color: $bg-color;
 
     img {
-        box-shadow: $box-shadow;
+        
         transition: all 1s;
 
         &:hover {
@@ -127,7 +127,7 @@ small {
 
     .card-body {
         background-color: $bg-color-light;
-        box-shadow: $box-shadow;
+        
 
         a {
             color: $tx-color-titulo;
