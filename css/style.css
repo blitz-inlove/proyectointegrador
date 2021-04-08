@@ -90,6 +90,7 @@ small {
 
 .card-deck {
   background-color: #dbb2e0;
+  padding: 20px;
 }
 .card-deck img {
   box-shadow: 6px 6px 9px rgba(126, 126, 126, 0.493);
