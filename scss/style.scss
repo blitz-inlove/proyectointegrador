@@ -148,7 +148,6 @@ small {
         }
 
         p {
-            color: $tx-color-subtitulo;
             font-size: 0.85em;
             font-family: 'Poppins', sans-serif;
             text-shadow: $tx-shadow-subtitulo;
@@ -170,9 +169,6 @@ small {
     margin-left: 0;
     padding-right: 0;
     padding-left: 0;
-}
-.card-text{
-    color: $tx-color-subtitulo;
 }
 
 .text-container-fluid {
@@ -228,7 +224,6 @@ small {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 1em;
-    color: $tx-color-subtitulo;
     text-shadow: $tx-shadow-subtitulo;
 }
 
